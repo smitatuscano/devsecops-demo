@@ -7,6 +7,7 @@ interface BoardProps {
   winningLine: number[] | null;
 }
 
+
 const Board: React.FC<BoardProps> = ({ squares, onClick, winningLine }) => {
   const renderSquare = (i: number) => {
     const isWinningSquare = winningLine?.includes(i) || false;
